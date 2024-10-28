@@ -1,0 +1,203 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #93c8a8;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #67b887;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    color: #000000; /* Accent color */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero-content {
+    text-align: center;
+    position: relative;
+    
+}
+
+.hero-image {
+    max-width: 500px; /* Adjust size as needed */
+    border-radius: 0%; /* Makes the image circular */
+    margin-top: 20px; /* Adjust spacing */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #ff4500;
+}
+
+/* Sections */
+section {
+    padding: 80px 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 26px;
+}
+
+#about, #portfolio, #services, #contact {
+    background-color: #93c8a8;
+    margin-bottom: 20px;
+}
+
+
+#services img {
+    width: 100px ;
+}
+
+#services div {
+    display: flex ;
+    width: 700px;
+    justify-content: space-around;
+}
+
+#contact img {
+    width: 50px;
+}
+
+#contact a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+}
+
+#contact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 26px;
+}
+
+/* Portfolio */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #282828;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.portfolio-item:hover {
+    background-color: #383838;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #282828;
+    color: #fff;
+}
+
+button {
+    padding: 10px;
+    background-color: #38cdcf;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3bc2b0;
+}
+
